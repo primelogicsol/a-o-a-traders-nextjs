@@ -17,24 +17,24 @@ export const menuData: Menu[] = [
     id: 3,
     title: "All Products",
     newTab: false,
-    path: "/contact",
+    path: "#",
   },
   {
     id: 6,
     title: "Blog",
     newTab: false,
-    path: "/",
+    path: "/blogs/blog-grid-with-sidebar",
   },
   {
     id: 7,
     title: "About Us",
     newTab: false,
-    path: "/",
+    path: "#",
   },
   {
     id: 7,
     title: "Contact Us",
     newTab: false,
-    path: "/",
+    path: "/contact",
   },
 ];

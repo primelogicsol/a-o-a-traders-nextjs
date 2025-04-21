@@ -2,7 +2,7 @@ import React from 'react';
 
 const Topbar: React.FC = () => {
     return (
-        <div className="bg-gray-100 text-sm text-gray-700 py-2 border-b border-app_border">
+        <div className=" sticky bg-gray-100 text-sm text-gray-700 py-2 border-b border-app_border">
             <div className="container mx-auto px-4 flex justify-between items-center">
                 <div>Express Delivery</div>
                 <div className="flex items-center space-x-4">
