@@ -2,13 +2,13 @@ import React from "react";
 import ProductItem from "@/components/Common/ProductItem";
 import shopData from "@/components/Shop/shopData";
 
-const NewArrivals = () => {
+const Technology = () => {
   return (
     <section className="xl-max-w-[1500px] w-full overflow-hidden px-[20px] my-[50px]">
       {/* <!-- section title --> */}
       <div className="flex items-center justify-between mb-[25px] border-b-[2px] border-app_border pb-[15px]">
         <h2 className="text-head-2 text-app_text font-medium border-b-[2px] border-orange pb-[5px]">
-          New Arrivals
+          Technology
         </h2>
 
         <div className="flex items-center gap-[15px]">
@@ -30,4 +30,4 @@ const NewArrivals = () => {
   );
 };
 
-export default NewArrivals;
+export default Technology;
