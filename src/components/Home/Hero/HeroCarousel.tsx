@@ -7,8 +7,6 @@ import "swiper/css/pagination";
 import "swiper/css";
 
 import Image from "next/image";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 
 const HeroCarousal = () => {
   return (
@@ -26,85 +24,81 @@ const HeroCarousal = () => {
       className="hero-carousel"
     >
       <SwiperSlide>
-        <div className="flex items-center pt-6 sm:pt-0 flex-col-reverse sm:flex-row">
-          <div className="max-w-[394px] py-10 sm:py-15 lg:py-24.5 pl-4 sm:pl-7.5 lg:pl-12.5">
-            <div className="flex items-center gap-4 mb-7.5 sm:mb-10">
-              <span className="block font-semibold text-heading-3 sm:text-heading-1 text-blue">
-                30%
-              </span>
-              <span className="block text-dark text-sm sm:text-custom-1 sm:leading-[24px]">
-                Sale
-                <br />
-                Off
-              </span>
-            </div>
+        <div className="w-full h-[500px] relative flex items-center flex-col-reverse sm:flex-row">
+          <Image
+            src="/images/hero/hero1.webp"
+            alt="headphone"
+            fill
+            className="object-cover rounded-md"
+          />
 
-            <h1 className="font-semibold text-dark text-xl sm:text-3xl mb-3">
-              <a href="#">True Wireless Noise Cancelling Headphone</a>
+          <div className="text-white relative left-[50px] z-10 max-w-[500px]">
+            <h1 className="text-head-1 font-semibold">
+              <a href="#">Samsung Wireless Speakers Multi-Room Audio</a>
             </h1>
 
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at
-              ipsum at risus euismod lobortis in
+            <p className="text-head-3 mt-[20px]">
+              From the backyard to the beach, stream audio wirelessly from any
+              Bluetooth device with the speaker that packs big sound into a
+              slim, portable package.
             </p>
 
-            <a
-              href="#"
-              className="inline-flex font-medium text-white text-custom-sm rounded-md bg-dark py-3 px-9 ease-out duration-200 hover:bg-blue mt-10"
-            >
-              Shop Now
-            </a>
-          </div>
-
-          <div>
-            <Image
-              src="/images/hero/hero-01.png"
-              alt="headphone"
-              width={351}
-              height={358}
-            />
+            <button className="inline-flex font-normal text-white text-head-4 rounded-md bg-orange py-[14px] px-[35px] ease-out duration-200 hover:bg-white hover:text-app_text mt-[30px]">
+              Get It Now
+            </button>
           </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        {" "}
-        <div className="flex items-center pt-6 sm:pt-0 flex-col-reverse sm:flex-row">
-          <div className="max-w-[394px] py-10 sm:py-15 lg:py-26 pl-4 sm:pl-7.5 lg:pl-12.5">
-            <div className="flex items-center gap-4 mb-7.5 sm:mb-10">
-              <span className="block font-semibold text-heading-3 sm:text-heading-1 text-blue">
-                30%
-              </span>
-              <span className="block text-dark text-sm sm:text-custom-1 sm:leading-[24px]">
-                Sale
-                <br />
-                Off
-              </span>
-            </div>
+        <div className="w-full h-[500px] relative flex items-center flex-col-reverse sm:flex-row">
+          <Image
+            src="/images/hero/hero2.webp"
+            alt="headphone"
+            fill
+            className="object-cover rounded-md"
+          />
 
-            <h1 className="font-semibold text-dark text-xl sm:text-3xl mb-3">
-              <a href="#">True Wireless Noise Cancelling Headphone</a>
+          <div className="text-white relative left-[50px] z-10 max-w-[500px]">
+            <h1 className="text-head-1 font-semibold">
+              <a href="#">Big Sale Off Washing Machine</a>
             </h1>
 
-            <p>
-              Lorem ipsum dolor sit, consectetur elit nunc suscipit non ipsum
-              nec suscipit.
+            <p className="text-head-3 mt-[20px]">
+              Powerful Steam Eliminates Stains without Pre-treatment Super
+              Speed. Wash a full load in 40 minutes.
             </p>
 
-            <Link
+            <a
               href="#"
-              // className="inline-flex font-medium text-white text-custom-sm rounded-md bg-dark py-3 px-9 ease-out duration-200 hover:bg-blue mt-10"
+              className="inline-flex font-normal text-white text-head-4 rounded-md bg-orange py-[14px] px-[35px] ease-out duration-200 hover:bg-white hover:text-app_text mt-[30px]"
             >
-              <Button variant="secondary" className="rounded-lg bg-orange text-white hover:bg-secondary hover:text-primary" size="lg">Shop Now</Button>
-            </Link>
+              Get It Now
+            </a>
           </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="w-full h-[500px] relative flex items-center flex-col-reverse sm:flex-row">
+          <Image
+            src="/images/hero/hero3.webp"
+            alt="headphone"
+            fill
+            className="object-cover rounded-md"
+          />
 
-          <div>
-            <Image
-              src="/images/hero/hero-01.png"
-              alt="headphone"
-              width={351}
-              height={358}
-            />
+          <div className="text-white relative left-[50px] z-10 max-w-[500px]">
+            <h1 className="text-head-1 font-semibold">
+              <a href="#">Hurry up! American FastFood Everyday</a>
+            </h1>
+
+            <p className="text-head-3 mt-[20px]">
+            Powerful Steam Eliminates Stains without Pre-treatment
+            Super Speed. Wash a full load in 40 minutes.
+            </p>
+
+            <button className="inline-flex font-normal text-white text-head-4 rounded-md bg-orange py-[14px] px-[35px] ease-out duration-200 hover:bg-white hover:text-app_text mt-[30px]">
+              Get It Now
+            </button>
           </div>
         </div>
       </SwiperSlide>

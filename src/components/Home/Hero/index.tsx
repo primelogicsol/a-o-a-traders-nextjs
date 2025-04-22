@@ -1,98 +1,50 @@
 import React from "react";
 import HeroCarousel from "./HeroCarousel";
 import HeroFeature from "./HeroFeature";
-import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="overflow-hidden pb-10 lg:pb-12.5 xl:pb-15 pt-57.5 sm:pt-45 lg:pt-30 xl:pt-51.5 bg-[#E5EAF4]">
-      <div className="max-w-[1170px] w-full mx-auto px-4 sm:px-8 xl:px-0">
-        <div className="flex flex-wrap gap-5">
-          <div className="xl:max-w-[757px] w-full">
-            <div className="relative z-1 rounded-[10px] bg-white overflow-hidden">
-              {/* <!-- bg shapes --> */}
-              <Image
-                src="/images/hero/hero-bg.png"
-                alt="hero bg shapes"
-                className="absolute right-0 bottom-0 -z-1"
-                width={534}
-                height={520}
-              />
+    // Hero Section
+    <section className="xl-max-w-[1500px] w-full overflow-hidden pt-57.5 sm:pt-45 lg:pt-30 xl:pt-51.5">
+      <div className="flex flex-wrap justify-between mb-[30px] px-[20px]">
+        {/* Shop By Department */}
+        <div className="xl:max-w-[20%] w-full flex flex-col text-head-4 text-app_text bg-white rounded-md p-[15px] border-[2px] border-orange">
+          <button className="flex items-center justify-between font-medium py-[10px] border-b-[1px] border-app_border hover:text-orange">
+            Office<span>i</span>
+          </button>
+          <button className="flex items-center justify-between font-medium py-[10px] border-b-[1px] border-app_border hover:text-orange">
+            Technology<span>i</span>
+          </button>
+          <button className="flex items-center justify-between font-medium py-[10px] border-b-[1px] border-app_border hover:text-orange">
+            Furniture<span>i</span>
+          </button>
+          <button className="flex items-center justify-between font-medium py-[10px] border-b-[1px] border-app_border hover:text-orange">
+            Janitorial & Sanitation<span>i</span>
+          </button>
+          <button className="flex items-center justify-between font-medium py-[10px] border-b-[1px] border-app_border hover:text-orange">
+            Industrial<span>i</span>
+          </button>
+          <button className="flex items-center justify-between font-medium py-[10px] border-b-[1px] border-app_border hover:text-orange">
+            Food Service<span>i</span>
+          </button>
+          <button className="flex items-center justify-between font-medium py-[10px] border-b-[1px] border-app_border hover:text-orange">
+            School Supplies<span>i</span>
+          </button>
+          <button className="flex items-center justify-between font-medium py-[10px] border-b-[1px] border-app_border hover:text-orange">
+            Oven<span>i</span>
+          </button>
+          <button className="flex items-center justify-between font-medium py-[10px] border-b-[1px] border-app_border hover:text-orange">
+            Ink & Toner<span>i</span>
+          </button>
+          <button className="flex items-center justify-between font-medium py-[10px] border-b-[1px] border-app_border hover:text-orange">
+            Desk Accessories<span>i</span>
+          </button>
+        </div>
 
-              <HeroCarousel />
-            </div>
-          </div>
-
-          <div className="xl:max-w-[393px] w-full">
-            <div className="flex flex-col sm:flex-row xl:flex-col gap-5">
-              <div className="w-full relative rounded-[10px] bg-white p-4 sm:p-7.5">
-                <div className="flex items-center gap-14">
-                  <div>
-                    <h2 className="max-w-[153px] font-semibold text-dark text-xl mb-20">
-                      <a href="#"> iPhone 14 Plus & 14 Pro Max </a>
-                    </h2>
-
-                    <div>
-                      <p className="font-medium text-dark-4 text-custom-sm mb-1.5">
-                        limited time offer
-                      </p>
-                      <span className="flex items-center gap-3">
-                        <span className="font-medium text-heading-5 text-red">
-                          $699
-                        </span>
-                        <span className="font-medium text-2xl text-dark-4 line-through">
-                          $999
-                        </span>
-                      </span>
-                    </div>
-                  </div>
-
-                  <div>
-                    <Image
-                      src="/images/hero/hero-02.png"
-                      alt="mobile image"
-                      width={123}
-                      height={161}
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="w-full relative rounded-[10px] bg-white p-4 sm:p-7.5">
-                <div className="flex items-center gap-14">
-                  <div>
-                    <h2 className="max-w-[153px] font-semibold text-dark text-xl mb-20">
-                      <a href="#"> Wireless Headphone </a>
-                    </h2>
-
-                    <div>
-                      <p className="font-medium text-dark-4 text-custom-sm mb-1.5">
-                        limited time offer
-                      </p>
-                      <span className="flex items-center gap-3">
-                        <span className="font-medium text-heading-5 text-red">
-                          $699
-                        </span>
-                        <span className="font-medium text-2xl text-dark-4 line-through">
-                          $999
-                        </span>
-                      </span>
-                    </div>
-                  </div>
-
-                  <div>
-                    <Image
-                      src="/images/hero/hero-01.png"
-                      alt="mobile image"
-                      width={123}
-                      height={161}
-                    />
-                  </div>
-                </div>
-              </div>
-
-              
-            </div>
-          </div>
+        {/* Hero Slider */}
+        <div className="xl:max-w-[79%] w-full rounded-[10px] overflow-hidden">
+          {/* <!-- bg shapes --> */}
+          <HeroCarousel />
         </div>
       </div>
 
@@ -103,3 +55,5 @@ const Hero = () => {
 };
 
 export default Hero;
+
+// bg-[#E5EAF4]
