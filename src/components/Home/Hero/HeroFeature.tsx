@@ -26,19 +26,19 @@ const featureData = [
 
 const HeroFeature = () => {
   return (
-    <div className="w-full border-[1px] border-app_border py-[30px]">
-      <div className="max-w-[1500px] mx-auto flex flex-wrap items-center justify-between">
-        {featureData.map((item, key) => (
-          <div className="flex items-center gap-4 border-r-[2px] border-app_border pr-[20px]" key={key}>
-            <Image src={item.img} alt="icons" width={40} height={41} />
+    <div className="max-w-[1500px] mx-auto flex flex-wrap items-center justify-between">
+      {featureData.map((item, key) => (
+        <div className="flex items-center gap-4" key={key}>
+          <Image src={item.img} alt="icons" width={40} height={41} />
 
-            <div>
-              <h3 className="font-medium text-head-head-3 text-app_text">{item.title}</h3>
-              <p className="text-head-4 text-app_text2">{item.description}</p>
-            </div>
+          <div>
+            <h3 className="font-medium text-custom-lg text-app_text">
+              {item.title}
+            </h3>
+            <p className="text-custom-sm text-app_text2">{item.description}</p>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
   );
 };

@@ -5,10 +5,10 @@ import HeroFeature from "./HeroFeature";
 const Hero = () => {
   return (
     // Hero Section
-    <section className="xl-max-w-[1500px] w-full overflow-hidden pt-57.5 sm:pt-45 lg:pt-30 xl:pt-51.5">
-      <div className="flex flex-wrap justify-between mb-[30px] px-[20px]">
+    <section className="max-w-[1500px] mx-auto w-full overflow-hidden pt-57.5 sm:pt-45 lg:pt-30 xl:pt-51.5 px-[20px]">
+      <div className="flex flex-wrap justify-between mb-[30px]">
         {/* Shop By Department */}
-        <div className="xl:max-w-[20%] w-full flex flex-col text-head-4 text-app_text bg-white rounded-md p-[15px] border-[2px] border-orange">
+        <div className="xl:max-w-[20%] w-full flex flex-col text-custom-sm text-app_text bg-white rounded-md p-[15px] border-[2px] border-orange">
           <button className="flex items-center justify-between font-medium py-[10px] border-b-[1px] border-app_border hover:text-orange">
             Office<span>i</span>
           </button>
@@ -42,7 +42,7 @@ const Hero = () => {
         </div>
 
         {/* Hero Slider */}
-        <div className="xl:max-w-[79%] w-full rounded-[10px] overflow-hidden">
+        <div className="xl:max-w-[78%] w-full rounded-[10px] overflow-hidden">
           {/* <!-- bg shapes --> */}
           <HeroCarousel />
         </div>
