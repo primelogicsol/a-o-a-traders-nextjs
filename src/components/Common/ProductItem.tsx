@@ -58,7 +58,7 @@ const ProductItem = ({ item }: { item: Product }) => {
             }}
             id="newOne"
             aria-label="button for quick view"
-            className="flex items-center justify-center w-9 h-9 rounded-[5px] shadow-1 ease-out duration-200 text-dark bg-white hover:text-blue"
+            className="flex items-center justify-center w-9 h-9 rounded-[5px] shadow-1 ease-out duration-200 text-dark bg-white hover:text-orange"
           >
             <svg
               className="fill-current"
@@ -87,7 +87,7 @@ const ProductItem = ({ item }: { item: Product }) => {
             onClick={() => handleItemToWishList()}
             aria-label="button for favorite select"
             id="favOne"
-            className="flex items-center justify-center w-9 h-9 rounded-[5px] shadow-1 ease-out duration-200 text-dark bg-white hover:text-blue"
+            className="flex items-center justify-center w-9 h-9 rounded-[5px] shadow-1 ease-out duration-200 text-dark bg-white hover:text-orange"
           >
             <svg
               className="fill-current"
@@ -109,7 +109,7 @@ const ProductItem = ({ item }: { item: Product }) => {
             onClick={() => handleItemToWishList()}
             aria-label="button for favorite select"
             id="favOne"
-            className="flex items-center justify-center w-9 h-9 rounded-[5px] shadow-1 ease-out duration-200 text-dark bg-white hover:text-blue"
+            className="flex items-center justify-center w-9 h-9 rounded-[5px] shadow-1 ease-out duration-200 text-dark bg-white hover:text-orange"
           >
             <svg
               className="fill-current"
@@ -168,15 +168,15 @@ const ProductItem = ({ item }: { item: Product }) => {
       </div>
 
       <h3
-        className="text-app_text font-medium ease-out duration-200 hover:text-app_blue my-[5px]"
+        className="text-app_text font-medium ease-out duration-200 hover:text-orange my-[8px]"
         onClick={() => handleProductDetails()}
       >
         <Link href="/shop-details"> {item.title} </Link>
       </h3>
 
       <span className="flex items-center gap-[7px] font-medium text-[20px]">
-        <span className="text-dark">${item.discountedPrice}</span>
-        <span className="text-dark-4 line-through">${item.price}</span>
+        <span className="text-app_text">${item.discountedPrice}</span>
+        <span className="text-app_text2 line-through">${item.price}</span>
       </span>
 
       <button

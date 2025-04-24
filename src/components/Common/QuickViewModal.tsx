@@ -64,7 +64,7 @@ const QuickViewModal = () => {
     <div
       className={`${
         isModalOpen ? "z-99999" : "hidden"
-      } fixed top-0 left-0 overflow-y-auto no-scrollbar w-full h-screen sm:py-20 xl:py-25 2xl:py-[230px] bg-dark/70 sm:px-8 px-4 py-5`}
+      } fixed top-0 left-0 overflow-y-auto no-scrollbar w-full h-screen sm:py-20 xl:py-25 2xl:py-[230px] bg-dark/70    sm:px-8 px-4 py-5`}
     >
       <div className="flex items-center justify-center ">
         <div className="w-full max-w-[1100px] rounded-xl shadow-3 bg-white p-7.5 relative modal-content">
@@ -98,8 +98,8 @@ const QuickViewModal = () => {
                     <button
                       onClick={() => setActivePreview(key)}
                       key={key}
-                      className={`flex items-center justify-center w-20 h-20 overflow-hidden rounded-lg bg-gray-1 ease-out duration-200 hover:border-2 hover:border-blue ${
-                        activePreview === key && "border-2 border-blue"
+                      className={`flex items-center justify-center w-20 h-20 overflow-hidden rounded-lg bg-gray-1 ease-out duration-200 hover:border-2 hover:border-app_blue ${
+                        activePreview === key && "border-2 border-app_blue"
                       }`}
                     >
                       <Image
@@ -118,7 +118,7 @@ const QuickViewModal = () => {
                     <button
                       onClick={handlePreviewSlider}
                       aria-label="button for zoom"
-                      className="gallery__Image w-10 h-10 rounded-[5px] bg-white shadow-1 flex items-center justify-center ease-out duration-200 text-dark hover:text-blue absolute top-4 lg:top-8 right-4 lg:right-8 z-50"
+                      className="gallery__Image w-10 h-10 rounded-[5px] bg-white shadow-1 flex items-center justify-center ease-out duration-200 text-dark hover:text-app_blue absolute top-4 lg:top-8 right-4 lg:right-8 z-50"
                     >
                       <svg
                         className="fill-current"
@@ -332,7 +332,7 @@ const QuickViewModal = () => {
                     <button
                       onClick={() => quantity > 1 && setQuantity(quantity - 1)}
                       aria-label="button for remove product"
-                      className="flex items-center justify-center w-10 h-10 rounded-[5px] bg-gray-2 text-dark ease-out duration-200 hover:text-blue"
+                      className="flex items-center justify-center w-10 h-10 rounded-[5px] bg-gray-2 text-dark ease-out duration-200 hover:text-app_blue"
                       disabled={quantity < 0 && true}
                     >
                       <svg
@@ -362,7 +362,7 @@ const QuickViewModal = () => {
                     <button
                       onClick={() => setQuantity(quantity + 1)}
                       aria-label="button for add product"
-                      className="flex items-center justify-center w-10 h-10 rounded-[5px] bg-gray-2 text-dark ease-out duration-200 hover:text-blue"
+                      className="flex items-center justify-center w-10 h-10 rounded-[5px] bg-gray-2 text-dark ease-out duration-200 hover:text-app_blue"
                     >
                       <svg
                         className="fill-current"
@@ -394,14 +394,14 @@ const QuickViewModal = () => {
                 <button
                   disabled={quantity === 0 && true}
                   onClick={() => handleAddToCart()}
-                  className={`inline-flex font-medium text-white bg-blue py-3 px-7 rounded-md ease-out duration-200 hover:bg-blue-dark
+                  className={`inline-flex font-medium text-white bg-app_blue py-3 px-7 rounded-md ease-out duration-200 hover:bg-app_blue
                   `}
                 >
                   Add to Cart
                 </button>
 
                 <button
-                  className={`inline-flex items-center gap-2 font-medium text-white bg-dark py-3 px-6 rounded-md ease-out duration-200 hover:bg-opacity-95 `}
+                  className={`inline-flex items-center gap-2 font-medium text-white bg-app_text py-3 px-6 rounded-md ease-out duration-200 hover:bg-opacity-95 `}
                 >
                   <svg
                     className="fill-current"

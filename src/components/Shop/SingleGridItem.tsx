@@ -53,7 +53,7 @@ const SingleGridItem = ({ item }: { item: Product }) => {
             }}
             id="newOne"
             aria-label="button for quick view"
-            className="flex items-center justify-center w-9 h-9 rounded-[5px] shadow-1 ease-out duration-200 text-dark bg-white hover:text-blue"
+            className="flex items-center justify-center w-9 h-9 rounded-[5px] shadow-1 ease-out duration-200 text-app_text bg-white hover:text-app_blue"
           >
             <svg
               className="fill-current"
@@ -80,7 +80,7 @@ const SingleGridItem = ({ item }: { item: Product }) => {
 
           <button
             onClick={() => handleAddToCart()}
-            className="inline-flex font-medium text-custom-sm py-[7px] px-5 rounded-[5px] bg-blue text-white ease-out duration-200 hover:bg-blue-dark"
+            className="inline-flex font-medium text-custom-sm py-[7px] px-5 rounded-[5px] bg-app_blue text-white ease-out duration-200 hover:bg-app_blue"
           >
             Add to cart
           </button>
@@ -89,7 +89,7 @@ const SingleGridItem = ({ item }: { item: Product }) => {
             onClick={() => handleItemToWishList()}
             aria-label="button for favorite select"
             id="favOne"
-            className="flex items-center justify-center w-9 h-9 rounded-[5px] shadow-1 ease-out duration-200 text-dark bg-white hover:text-blue"
+            className="flex items-center justify-center w-9 h-9 rounded-[5px] shadow-1 ease-out duration-200 text-app_text bg-white hover:text-app_blue"
           >
             <svg
               className="fill-current"
@@ -147,13 +147,13 @@ const SingleGridItem = ({ item }: { item: Product }) => {
         <p className="text-custom-sm">({item.reviews})</p>
       </div>
 
-      <h3 className="font-medium text-dark ease-out duration-200 hover:text-blue mb-1.5">
+      <h3 className="font-medium text-app_text ease-out duration-200 hover:text-app_blue mb-1.5">
         <Link href="/shop-details"> {item.title} </Link>
       </h3>
 
       <span className="flex items-center gap-2 font-medium text-lg">
-        <span className="text-dark">${item.discountedPrice}</span>
-        <span className="text-dark-4 line-through">${item.price}</span>
+        <span className="text-app_text">${item.discountedPrice}</span>
+        <span className="text-app_text line-through">${item.price}</span>
       </span>
     </div>
   );

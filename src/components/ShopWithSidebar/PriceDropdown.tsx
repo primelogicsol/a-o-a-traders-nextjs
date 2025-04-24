@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import RangeSlider from 'react-range-slider-input';
-import 'react-range-slider-input/dist/style.css';
+import { useState } from "react";
+import RangeSlider from "react-range-slider-input";
+import "react-range-slider-input/dist/style.css";
 
 const PriceDropdown = () => {
   const [toggleDropdown, setToggleDropdown] = useState(true);
@@ -16,14 +16,12 @@ const PriceDropdown = () => {
         onClick={() => setToggleDropdown(!toggleDropdown)}
         className="cursor-pointer flex items-center justify-between py-3 pl-6 pr-5.5"
       >
-        <p className="text-dark">Price</p>
+        <p>Price</p>
         <button
           onClick={() => setToggleDropdown(!toggleDropdown)}
           id="price-dropdown-btn"
           aria-label="button for price dropdown"
-          className={`text-dark ease-out duration-200 ${
-            toggleDropdown && 'rotate-180'
-          }`}
+          className={`ease-out duration-200 ${toggleDropdown && "rotate-180"}`}
         >
           <svg
             className="fill-current"
@@ -44,13 +42,13 @@ const PriceDropdown = () => {
       </div>
 
       {/* // <!-- dropdown menu --> */}
-      <div className={`p-6 ${toggleDropdown ? 'block' : 'hidden'}`}>
+      <div className={`p-6 ${toggleDropdown ? "block" : "hidden"}`}>
         <div id="pricingOne">
           <div className="price-range">
             <RangeSlider
               id="range-slider-gradient"
               className="margin-lg"
-              step={'any'}
+              step={"any"}
               onInput={(e) =>
                 setSelectedPrice({
                   from: Math.floor(e[0]),
@@ -60,7 +58,7 @@ const PriceDropdown = () => {
             />
 
             <div className="price-amount flex items-center justify-between pt-4">
-              <div className="text-custom-xs text-dark-4 flex rounded border border-gray-3/80">
+              <div className="text-custom-xs text-app_text flex rounded border border-gray-3/80">
                 <span className="block border-r border-gray-3/80 px-2.5 py-1.5">
                   $
                 </span>
@@ -69,7 +67,7 @@ const PriceDropdown = () => {
                 </span>
               </div>
 
-              <div className="text-custom-xs text-dark-4 flex rounded border border-gray-3/80">
+              <div className="text-custom-xs text-app_text flex rounded border border-gray-3/80">
                 <span className="block border-r border-gray-3/80 px-2.5 py-1.5">
                   $
                 </span>

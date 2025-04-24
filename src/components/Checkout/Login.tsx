@@ -12,7 +12,7 @@ const Login = () => {
         }`}
       >
         Returning customer?
-        <span className="flex items-center gap-2.5 pl-1 font-medium text-dark">
+        <span className="flex items-center gap-2.5 pl-1 font-medium text-app_text">
           Click here to login
           <svg
             className={`${
@@ -53,7 +53,7 @@ const Login = () => {
             type="text"
             name="name"
             id="name"
-            className="rounded-md border border-gray-3 bg-gray-1 placeholder:text-dark-5 w-full py-2.5 px-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
+            className="rounded-md border border-gray-3 bg-gray-1 placeholder:text-app_text w-full py-2.5 px-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-app_blue"
           />
         </div>
 
@@ -67,13 +67,13 @@ const Login = () => {
             name="password"
             id="password"
             autoComplete="on"
-            className="rounded-md border border-gray-3 bg-gray-1 placeholder:text-dark-5 w-full py-2.5 px-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
+            className="rounded-md border border-gray-3 bg-gray-1 placeholder:text-app_text w-full py-2.5 px-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-app_blue"
           />
         </div>
 
         <button
           type="submit"
-          className="inline-flex font-medium text-white bg-blue py-3 px-10.5 rounded-md ease-out duration-200 hover:bg-blue-dark"
+          className="inline-flex font-medium text-white bg-app_blue py-3 px-10.5 rounded-md ease-out duration-200 hover:bg-app_blue"
         >
           Login
         </button>

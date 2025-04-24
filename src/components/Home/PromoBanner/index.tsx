@@ -1,26 +1,27 @@
 import React from "react";
 import Image from "next/image";
+import CounDown from "./Countdown";
 
 const PromoBanner = () => {
   return (
-    <section className="xl-max-w-[1500px] w-full overflow-hidden px-[20px] my-[50px]">
+    <section className="max-w-[1500px] mx-auto w-full overflow-hidden px-[20px] my-[50px]">
       {/* <!-- promo banner big --> */}
-      <div className="relative z-1 overflow-hidden rounded-lg bg-app_blue py-12.5 lg:py-17.5 xl:py-22.5 px-4 sm:px-7.5 lg:px-14 xl:px-19 mb-7.5">
+      {/* <div className="relative z-1 overflow-hidden rounded-lg bg-app_blue py-12.5 lg:py-17.5 xl:py-22.5 px-4 sm:px-7.5 lg:px-14 xl:px-19 mb-7.5">
         <div className="max-w-[550px] w-full text-white">
-          <span className="font-medium text-[20px]">
+          <span className="font-medium text-custom-xl">
             EcoBee3 Smart Thermostat Wi-Fi Remote Sensor
           </span>
 
-          <h2 className="text-[40px] font-bold my-[25px]">
+          <h2 className="text-heading-3 font-bold my-[15px]">
             UP TO <span className="text-orange">30%</span> OFF
           </h2>
 
-          <p className="text-head-3 font-medium">
+          <p className="text-custom-lg font-normal">
             EcoBee3 Smart Thermostat ek smart device hai jo Wi-Fi aur remote
             sensor ke sath aata hai, jo temperature ko smartly adjust karta hai.
           </p>
 
-          <button className="text-white text-head-4 font-normal rounded-md bg-orange py-[14px] px-[35px] ease-out duration-200 hover:bg-white hover:text-app_text mt-[30px]">
+          <button className="text-white text-custom-sm font-normal rounded-md bg-orange py-[14px] px-[35px] ease-out duration-200 hover:bg-white hover:text-app_text mt-[30px]">
             Discover Now
           </button>
         </div>
@@ -32,7 +33,9 @@ const PromoBanner = () => {
           width={600}
           height={400}
         />
-      </div>
+
+      </div> */}
+      <CounDown />
 
       <div className="grid gap-7.5 grid-cols-1 lg:grid-cols-2">
         {/* <!-- promo banner small --> */}
