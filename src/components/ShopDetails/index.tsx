@@ -701,7 +701,7 @@ const ShopDetails = () => {
             </div>
           </section>
 
-          <section className="max-w-[1500px] w-full mx-auto overflow-hidden bg-gray-2 py-20">
+          <section className="max-w-[1500px] w-full mx-auto overflow-hidden bg-gray-2 py-20 px-[20px]">
             {/* <!--== tab header start ==--> */}
             <div className="flex flex-wrap items-center bg-white rounded-[10px] shadow-1 gap-5 xl:gap-12.5 py-4.5 px-4 sm:px-6">
               {tabs.map((item, key) => (
