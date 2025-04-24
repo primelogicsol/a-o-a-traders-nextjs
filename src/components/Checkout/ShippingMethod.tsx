@@ -6,7 +6,7 @@ const ShippingMethod = () => {
   return (
     <div className="bg-white shadow-1 rounded-[10px] mt-7.5">
       <div className="border-b border-gray-3 py-5 px-4 sm:px-8.5">
-        <h3 className="font-medium text-xl text-dark">Shipping Method</h3>
+        <h3 className="font-medium text-xl text-app_text">Shipping Method</h3>
       </div>
 
       <div className="p-4 sm:p-8.5">
@@ -23,11 +23,11 @@ const ShippingMethod = () => {
                 className="sr-only"
                 onChange={() => setShippingMethod("free")}
               />
-              {/* selectShipping === 'free' ? 'border-4 border-blue' : 'border border-gray-4' */}
+              {/* selectShipping === 'free' ? 'border-4 border-app_blue' : 'border border-gray-4' */}
               <div
                 className={`flex h-4 w-4 items-center justify-center rounded-full ${
                   shippingMethod === "free"
-                    ? "border-4 border-blue"
+                    ? "border-4 border-app_blue"
                     : "border border-gray-4"
                 }`}
               ></div>
@@ -50,7 +50,7 @@ const ShippingMethod = () => {
               <div
                 className={`flex h-4 w-4 items-center justify-center rounded-full ${
                   shippingMethod === "fedex"
-                    ? "border-4 border-blue"
+                    ? "border-4 border-app_blue"
                     : "border border-gray-4"
                 }`}
               ></div>
@@ -68,7 +68,7 @@ const ShippingMethod = () => {
                 </div>
 
                 <div className="border-l border-gray-4 pl-4">
-                  <p className="font-semibold text-dark">$10.99</p>
+                  <p className="font-semibold text-app_text">$10.99</p>
                   <p className="text-custom-xs">Standard Shipping</p>
                 </div>
               </div>
@@ -90,7 +90,7 @@ const ShippingMethod = () => {
               <div
                 className={`flex h-4 w-4 items-center justify-center rounded-full ${
                   shippingMethod === "dhl"
-                    ? "border-4 border-blue"
+                    ? "border-4 border-app_blue"
                     : "border border-gray-4"
                 }`}
               ></div>
@@ -108,7 +108,7 @@ const ShippingMethod = () => {
                 </div>
 
                 <div className="border-l border-gray-4 pl-4">
-                  <p className="font-semibold text-dark">$12.50</p>
+                  <p className="font-semibold text-app_text">$12.50</p>
                   <p className="text-custom-xs">Standard Shipping</p>
                 </div>
               </div>

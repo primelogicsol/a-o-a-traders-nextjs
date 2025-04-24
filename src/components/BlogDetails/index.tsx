@@ -7,11 +7,10 @@ const BlogDetails = () => {
   return (
     <>
       <Breadcrumb title={"Blog Details"} pages={["blog details"]} />
-      <section className="overflow-hidden py-20 bg-gray-2">
-        <div className="max-w-[750px] w-full mx-auto px-4 sm:px-8 xl:px-0">
-          <div className="rounded-[10px] overflow-hidden mb-7.5">
+      <section className="max-w-[1500px] w-full mx-auto overflow-hidden py-20 bg-gray-2 px-[20px]">
+          <div className="w-full rounded-[10px] overflow-hidden mb-7.5">
             <Image
-              className="rounded-[10px]"
+              className="rounded-[10px] mx-auto"
               src="/images/blog/blog-details-01.jpg"
               alt="details"
               width={750}
@@ -21,14 +20,14 @@ const BlogDetails = () => {
 
           <div>
             <span className="flex items-center gap-3 mb-4">
-              <a href="#" className="ease-out duration-200 hover:text-blue">
+              <a href="#" className="ease-out duration-200 hover:text-app_blue">
                 Mar 27, 2022
               </a>
 
               {/* <!-- divider --> */}
               <span className="block w-px h-4 bg-gray-4"></span>
 
-              <a href="#" className="ease-out duration-200 hover:text-blue">
+              <a href="#" className="ease-out duration-200 hover:text-app_blue">
                 300k Views
               </a>
             </span>
@@ -136,7 +135,7 @@ const BlogDetails = () => {
                 <ul className="flex flex-wrap items-center gap-3.5">
                   <li>
                     <a
-                      className="inline-flex hover:text-white border border-gray-3 bg-white py-2 px-4 rounded-md ease-out duration-200 hover:bg-blue hover:border-blue"
+                      className="inline-flex hover:text-white border border-gray-3 bg-white py-2 px-4 rounded-md ease-out duration-200 hover:bg-app_blue hover:border-app_blue"
                       href="#"
                     >
                       Desktop
@@ -145,7 +144,7 @@ const BlogDetails = () => {
 
                   <li>
                     <a
-                      className="inline-flex hover:text-white border border-gray-3 bg-white py-2 px-4 rounded-md ease-out duration-200 hover:bg-blue hover:border-blue"
+                      className="inline-flex hover:text-white border border-gray-3 bg-white py-2 px-4 rounded-md ease-out duration-200 hover:bg-app_blue hover:border-app_blue"
                       href="#"
                     >
                       Macbook
@@ -154,7 +153,7 @@ const BlogDetails = () => {
 
                   <li>
                     <a
-                      className="inline-flex hover:text-white border border-gray-3 bg-white py-2 px-4 rounded-md ease-out duration-200 hover:bg-blue hover:border-blue"
+                      className="inline-flex hover:text-white border border-gray-3 bg-white py-2 px-4 rounded-md ease-out duration-200 hover:bg-app_blue hover:border-app_blue"
                       href="#"
                     >
                       PC
@@ -247,7 +246,6 @@ const BlogDetails = () => {
               {/* <!-- Social Links end --> */}
             </div>
           </div>
-        </div>
       </section>
     </>
   );

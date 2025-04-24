@@ -6,14 +6,14 @@ const GenderItem = ({ category }) => {
   return (
     <button
       className={`${
-        selected && "text-blue"
-      } group flex items-center justify-between ease-out duration-200 hover:text-blue `}
+        selected && "text-app_blue"
+      } group flex items-center justify-between ease-out duration-200 hover:text-app_blue `}
       onClick={() => setSelected(!selected)}
     >
       <div className="flex items-center gap-2">
         <div
           className={`cursor-pointer flex items-center justify-center rounded w-4 h-4 border ${
-            selected ? "border-blue bg-blue" : "bg-white border-gray-3"
+            selected ? "border-app_blue bg-app_blue" : "bg-white border-gray-3"
           }`}
         >
           <svg
@@ -39,8 +39,8 @@ const GenderItem = ({ category }) => {
 
       <span
         className={`${
-          selected ? "text-white bg-blue" : "bg-gray-2"
-        } inline-flex rounded-[30px] text-custom-xs px-2 ease-out duration-200 group-hover:text-white group-hover:bg-blue`}
+          selected ? "text-white bg-app_blue" : "bg-gray-2"
+        } flex items-center justify-center rounded-[30px] text-custom-xs w-7 w-7 ease-out duration-200 group-hover:text-white group-hover:bg-app_blue`}
       >
         {category.products}
       </span>
@@ -59,11 +59,11 @@ const GenderDropdown = ({ genders }) => {
           toggleDropdown && "shadow-filter"
         }`}
       >
-        <p className="text-dark">Gender</p>
+        <p>Gender</p>
         <button
           onClick={() => setToggleDropdown(!toggleDropdown)}
           aria-label="button for gender dropdown"
-          className={`text-dark ease-out duration-200 ${
+          className={`ease-out duration-200 ${
             toggleDropdown && "rotate-180"
           }`}
         >
